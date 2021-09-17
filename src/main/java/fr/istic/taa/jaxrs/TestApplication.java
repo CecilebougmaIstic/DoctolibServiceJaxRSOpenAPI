@@ -21,6 +21,7 @@ import java.util.Set;
 
 import javax.ws.rs.core.Application;
 
+import fr.istic.taa.jaxrs.rest.CustomerResource;
 import fr.istic.taa.jaxrs.rest.PetResource;
 import fr.istic.taa.jaxrs.rest.UserResource;
 import fr.istic.taa.jaxrs.rest.WorkerResource;
@@ -37,6 +38,7 @@ public class TestApplication extends Application {
         clazzes.add(PetResource.class);
         clazzes.add(UserResource.class);
         clazzes.add(WorkerResource.class);
+        clazzes.add(CustomerResource.class);
         clazzes.add(OpenApiResource.class);
         
 
