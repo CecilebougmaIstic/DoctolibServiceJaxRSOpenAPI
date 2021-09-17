@@ -24,8 +24,7 @@ public class CustomerResource {
 	/*To obtain a one customer*/
 	
 	@GET
-	  @Path("/id")
-	 @Consumes("application/json")
+	@Path("/{customerId}")	
 	@Produces({"application/json"})
 	public Customer getCustomerById(@PathParam("customerId") Long customerId)  {
 		CustomerDao cusDao = new CustomerDao();
